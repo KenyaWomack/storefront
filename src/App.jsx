@@ -1,18 +1,23 @@
-import Categories from './Components/Categories'
-import Footer from './Components/Footer'
-import Header from './Components/Header'
-import Products from './Components/Products'
 
-function App() {
+import Categories from './Components/Categories';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Products from './Components/Products';
+// import Cart from './Components/Cart';
+
+const App = () => {
+  
 
   return (
-    <>
-      <Header />
-      <Categories />
-      <Products />
-      <Footer />
-    </>
-  )
-}
+    <div>
+      <Categories/>
+      <Header/>
+      <Footer/>
+      <Products/>
+      {/* <Cart/> */}
+      
+    </div>
+  );
+};
 
-export default App
+export default App;
