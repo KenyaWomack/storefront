@@ -1,23 +1,23 @@
+import Categories from './Components/Categories'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
+import Products from './Components/Products'
+import SimpleCart from './Components/SimpleCart';
+import './App.scss';
 
-import Categories from './Components/Categories';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Products from './Components/Products';
-// import Cart from './Components/Cart';
-
-const App = () => {
-  
+function App() {
 
   return (
-    <div>
-      <Categories/>
-      <Header/>
-      <Footer/>
-      <Products/>
-      {/* <Cart/> */}
-      
-    </div>
-  );
-};
+    <>
+      <div className='content'>
+        <Header />
+        <Categories />
+        <SimpleCart />
+        <Products />
+      </div>
+      <Footer />
+    </>
+  )
+}
 
-export default App;
+export default App
