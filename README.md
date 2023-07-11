@@ -15,3 +15,19 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 - [Code Sandbox Url](https://codesandbox.io/p/github/KenyaWomack/storefront/main?file=/package.json:1,1&workspaceId=74e570a2-0464-4872-a1b6-feb4865179af)
 
 - [GitHub Actions ci/cd](https://github.com/KenyaWomack/storefront/actions/new)
+
+## Lab 38 Redux - Asynchronous Actions
+
+### Problem
+
+In phase 3, we will be connecting our Virtual Store to a live API so that our data is persistent and able to be separately managed.
+
+The user stories from Phases 1 and 2 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock.
+As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it.
+
+## Collaborators
+
+AI
+Ryan Gallaway
