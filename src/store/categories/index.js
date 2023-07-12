@@ -20,8 +20,13 @@ const categorySlice = createSlice({
 
 export const getCategories = () => async (dispatch, getState) => {
 // make our call to get categories from the database
-let response = await axios.get('https://api-js401.herokuapp.com/api/v1/categories');
-dispatch(setInitialCategories(response.data.results));
+try{
+  let response = await axios.get('https://api-js401.herokuapp.com/api/v1/categories');
+  dispatch(setInitialCategories(response.data.results));
+
+} catch(e){
+  console.log('this is the error from getCategories', e)
+}
 
 }
 

@@ -12,7 +12,6 @@ const cartSlice = createSlice({
 export const { addToCart, removeFromCart } = cartSlice.actions;
 export default cartSlice.reducer;
 
-// the above changed the below code to Slice
 
 // function cartReducer(state = initialState, action) {
 //   switch (action.type) {
