@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { When } from 'react-if';
+import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -12,9 +13,9 @@ import { addToCart } from '../../store/cart';
 import { decrementInventoryOnAdd, getProducts } from '../../store/products';
 
 function Products() {
-  const { activeCategory } = useSelector((state) => state.categories);
-  const { products } = useSelector((state) => state);
-   console.log('this is products.....', products)
+  const activeCategory = useSelector((state) => state.categories.activeCategory);
+  const products = useSelector((state) => state.products);
+  console.log('this is products.....', products)
   const dispatch = useDispatch();
 
   const addDispatcher = (product) => {
@@ -54,7 +55,13 @@ function Products() {
                     >
                       ADD TO CART
                     </Button>
-                    <Button size="small">VIEW DETAILS</Button>
+                    <Button
+                      component={Link}
+                      to={`/productDetails/${product._id}`}
+                      size="small"
+                    >
+                      VIEW DETAILS
+                    </Button>
                   </CardActions>
                 </Card>
               </Grid>

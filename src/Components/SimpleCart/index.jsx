@@ -6,7 +6,7 @@ import { incrementInventoryOnRemove } from '../../store/products';
 import './styles.scss';
 
 function SimpleCart() {
-  const { cart } = useSelector(state => state);
+  const cart = useSelector(state => state.cart);
   const dispatch = useDispatch();
 
   const removeDispatcher = (product) => {
