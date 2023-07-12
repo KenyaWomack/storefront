@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <>
-      <footer data-testid="footer">&copy;2023 Code Fellows</footer>
+      <footer data-testid="footer">Kenya Womack&copy;2023 Code Fellows</footer>
       
     </>
   )
